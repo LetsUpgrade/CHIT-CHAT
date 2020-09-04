@@ -1,0 +1,141 @@
+intents:
+    - greet
+    - goodbye
+    - affirm
+    - deny
+    - mood_great
+    - mood_unhappy
+    - bot_challenge
+    - treatment_disease
+    - telling_Symptoms
+    - taking_phone_number
+    - taking_location
+    - hospital_type
+    - room_type
+    - age_group
+    - Suggestions
+    - Schedule an appointment
+    - taking_name
+    - healthy_diet
+    - age_group
+    - hospital_types
+    - room_type
+    - dept_type
+    - query_type
+
+entities:
+   - type_problem
+   - symptom_type
+   - phone_number
+   - hospitaltype
+   - age
+   - query_type           
+
+actions:
+   - utter_greet
+   - utter_happy
+   - utter_cheer_up
+   - utter_did_that_help
+   - utter_goodbye  
+   - utter_iamabot
+   - action_bot_greet
+   - action_ask_location
+   - action_set_location
+   - utter_ask_hospital_type
+   - utter_ask_type_problem
+   - utter_ask_for_schedule_an_appointment 
+   - action_get_date_time
+   - utter_slot_values   
+   - utter_ask_symptom_type
+   - utter_ask_for_suggestions
+   - utter_ask_for_booking_appointment
+   - utter_ask_for_name
+   - action_get_name
+   - utter_ask_phone_number     
+   - utter_ask_age   
+   - utter_ask_location
+   - utter_location_denied   
+   - utter_please_try_after_sometime
+   - action_show_hospitals
+   - utter_ask_for_room_type
+   - utter_ask_for_appointment_booking 
+   - utter_ask_time_slots 
+   - action_taking_location   
+
+templates:
+    utter_greet:
+    -  text: "	Hey! How are you?"
+    -  text: "Hey! Are you there?"
+    -  text: "Hey! How is your day going?"
+    
+    utter_happy:
+      - text: "Great, carry on!"
+
+    utter_cheer_up:
+      - text: "Here is something to cheer you up:"
+    
+    utter_did_that_help:
+     - text: "Did that help you?"
+
+    utter_goodbye:
+    - text: "Bye"
+    - text: "Have a great day"
+
+    utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+    utter_ask_hospital_type:
+     - text: "Could you please tell me about state hospitals?"
+     - text: "Can you provide private hospitals list?"
+     - text: "Can you tell me a nursing home in hyderabad city ?"
+
+    utter_ask_type_problem:
+     - text: "What type of problem are you facing?"
+
+     utter_ask_for_schedule_an_appointment:
+      - text: "Could you please book an appointment with doctor on monday at 5pm?"
+      - text: "Can you schedule my appointment?"
+      - text: "Could you please confirm my appointment?
+
+     utter_ask_symptom_type:
+       - text: "What are the symptoms you are facing?"
+
+    utter_ask_for_suggestions:
+      - text: "Do you need any suggestions?"
+      - text: "Do you required any suggestions?"
+
+    utter_ask_for_booking_appointment:
+      - text: "Do you want to book an appointment with the doctor?"
+
+    utter_ask_for_name:
+       - text: "What is your name?"
+       - text: "Could you please tell me your name?"
+       - text: "May i know your name?"
+
+    utter_ask_phone_number:
+       - text: "What is your phone number?"
+       - text: "Could you please tell me your phone number?"
+       - text: "May i know your phone number?"
+   
+    utter_ask_age:
+       - text: "What is your age?"
+       - text: "Could you please tell me your age?"
+       - text: "May i know your age?"
+ 
+    utter_ask_location:
+      - text: "can you provide your location please?"
+      - text: "May i know your location?"
+
+    utter_please_try_after_sometime:
+       - text: "Could you please try after some time?"
+
+   utter_ask_for_room_type:
+      - text: "May i know which type of room you want?"
+      - text: "May i know which type of room you are looking for?"
+
+    utter_ask_for_appointment_booking:
+     - text: "Do you want to book an appointment?"
+
+    utter_ask_time_slots:
+      - text:"In which time slot do you want to book an appointment?" 
+
