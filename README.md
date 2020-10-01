@@ -7,12 +7,13 @@
 A bot that aims to serve humans queries and give an feasible answer to their queries. It is a machine-learning discussion dialog engine which makes it possible to generate responses based on collections of old conversations.
 
 
->## 📂&nbsp; RELEVANT TECHNOLOGY
+>## 📂&nbsp; RELEVANT TECHNOLOGY STACK
 Any web technology can be used but I am thinking about using PYTHON
 * ML
 * Python
 * Tensorflow
 * Rasa FrameWork
+* Rasa X based deployment
 
 >## 💻&nbsp; GETTING STARTED
 
