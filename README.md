@@ -8,7 +8,6 @@ A bot that aims to serve humans queries and give an feasible answer to their que
 
 
 >## 📂&nbsp; RELEVANT TECHNOLOGY STACK
-Any web technology can be used but I am thinking about using PYTHON
 * ML
 * Python
 * Tensorflow
