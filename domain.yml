@@ -1,0 +1,321 @@
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- out_of_scope
+- thankyou
+- ask_corona
+- ask_fever
+- about_covid-19
+- about_coronavirus
+- about_coronavirus_symptoms
+- coronavirus_spread_air
+- coronavirus_spread_feces
+- coronavirus_spread_no_symptoms
+- coronavirus_spread_animal_source
+- coronavirus_protection_measures
+- coronavirus_worry_covid19
+- coronavirus_coronavirus_about_risk
+- coronavirus_coronavirus_about_antibiotics
+- coronavirus_about_vaccine
+- coronavirus_about_mask
+- coronavirus_about_risk
+- coronavirus_about_antibiotics
+- coronavirus_about_incubation
+- coronavirus_about_avoid
+- corona_in_my_area
+- corona_location_tracker
+- recent_stats
+- search_provider
+- vaccine_updates
+- do_i_have_corona
+- fever_yes_or_no
+- cough_yes_or_no
+- tiredness_yes_or_no
+- covid_contact
+- travel_yes_or_no
+- coronavirus_about_sanitizer
+- coronavirus_precautive_vitamins
+- spread_coronavirus
+- coronavirus_children
+- coronavirus_old_people
+- coronavirus_old_adults_young
+- prepare_for_outbreak
+- coronavirus_test
+- contact_tracing_corona_period
+- funerals_corona
+- coronavirus_cleaning_disinfection
+- community_mitigation_corona
+- corona_from_food_and_water
+- treat_corona_home
+
+
+
+entities:
+- location
+- facility_type
+- fever
+- tiredness
+- cough
+- contact
+- travel
+
+slots:
+  facility_type:
+    type: text
+  location:
+    type: text
+  fever:
+    type: text
+  cough:
+    type: text   
+  tiredness:
+    type: text  
+  contact:
+    type: text
+  travel:
+    type: text            
+
+responses:   
+  utter_greet:
+  - text: "Hey! How are you? I am a Covid-19 Chatbot. How may I help you ?"
+  utter_corona:
+  - text: "Coronaviruses are a large family of viruses which may cause illness in animals or humans. It is a kind of virus that causes an infection in your nose, sinuses, or upper throat. The most recently discovered coronavirus causes coronavirus disease COVID-19."
+  utter_covid19:
+  - text: "COVID-19 is the infectious disease caused by the most recently discovered coronavirus. Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019."
+  utter_symptoms:
+  - text: "Most common symptoms are :-\n
+            > Fever\n
+            > Tiredness\n
+            > Dry cough\n
+            Less common symptoms are :- \n
+            > Aches and Pains\n
+            > Nasal congestion\n
+            > Sore Throat\n
+            > Headache\n 
+            > Diarrhea\n
+            > Difficulty Breathing\n"
+
+  utter_coronavirus_spread_air:
+  - text: ' Airbrone transmission of the novel corona virus is highly virulent, and
+          could be the dominant route for the spread of COVID-19.'
+  utter_coronavirus_spread_animal_source:
+  - text: "1. Coronaviruses are a large family of viruses that are common in animals.\
+      \ \n2. Occasionally, people get infected with these viruses which may then spread\
+      \ to other people. \n3. Resist visiting live animal markets, avoid direct contact\
+      \ with animals and surfaces in contact with animals."
+  utter_coronavirus_spread_feces:
+  - text: "1. The risk of catching COVID-19 from the feces of an infected person appears\
+      \ to be low. \n2.While initial investigations suggest the virus may be present\
+      \ in feces in some cases, spread through this route is not a main feature of\
+      \ the outbreak. "
+  utter_coronavirus_spread_no_symptoms:
+  - text: "\n 1.The risk of catching COVID-19 from someone with no symptoms at all\
+      \ is very low. \n2.However, many people with COVID-19 experience only mild symptoms.\
+      \ \n3.This is particularly true at the early stages of the disease. \n 4.It\
+      \ is therefore possible to catch COVID-19 from someone who has, just a mild\
+      \ cough and does not feel ill."
+  utter_coronavirus_protection_measures:
+  - text: "1. Clean your hands often. Use soap and water, or an alcohol-based hand rub. \n2. Maintain a safe distance from anyone who is coughing or sneezing.\n3. Wear a mask when physical distancing is not possible.\n4. Do not touch your eyes, nose or mouth.\n5. Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\n6. Stay home if you feel unwell.\n7. If you have a fever, cough and difficulty in breathing, seek medical attention. "
+  utter_coronavirus_worry_covid19:
+  - text: "1.  Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness: about 1 in every 5 people who catch it need hospital care. \nIt is therefore quite normal for people to worry about how the COVID-19 outbreak will affect them and their loved ones. \n2. First and foremost among these actions is regular and thorough hand-washing and good respiratory hygiene. \nSecondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel, movement and gatherings. "
+  utter_coronavirus_about_risk:
+  - text: "COVID-2019 affects older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to develop serious illness more often than others. \nIn U.S., about 80% of deaths from the disease have been from the age 65 and older."
+  utter_coronavirus_about_antibiotics:
+  - text: "No. Antibiotics do not work against viruses. \nThis is because Antibiotics can only treat bacterial infections, not viruses."
+  utter_coronavirus_about_vaccine:
+  - text: " Not yet. To date, there is no vaccine and no specific antiviral medicine to prevent or treat COVID-2019. However, those affected should receive care to relieve symptoms. \nPeople with serious illness should be hospitalized. Possible vaccines and some specific drug treatments are under investigation. \nThey are being tested through clinical trials. \nThe most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing"
+  utter_coronavirus_about_mask:
+  - text: " Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19.
+  \nAlso you can wear masks when ever you are travelling. \nThere is a world-wide shortage of masks, so we urge people to use masks wisely. \nWe advises rational use of medical masks to avoid unnecessary wastage of precious resources and misuse of masks."
+  utter_coronavirus_about_incubation:
+  - text: " The incubation period means the time between catching the virus and beginning to have symptoms of the disease. \nMost estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days."
+  utter_coronavirus_about_avoid:
+  - text : "The following measures ARE NOT effective against COVID-2019 and can be harmful:  \n1.Smoking \n2.Taking traditional herbal remedies. \n3.Wearing multiple masks.\n 4.No social distancing. \n5. Shaking hands and hugging people. \n6. No cleanliness. \n7. Eating and drinking in public places. \n8. Not being self quarantined  if sick."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "Bye"
+  utter_ask_fever:
+  - text: "Do you have fever or high temp?"
+  utter_ask_corona:
+  - text: "Do you have corona?"  
+  utter_ask_respiration:
+  - text: "Are you having problem in breathing?"
+  utter_noworries:
+  - text: "no problem"
+  utter_ask_continue:
+  - text: "Sorry, I don't understand. Do you want to continue?"
+  utter_type_location:
+  - text: Okay, I will do that ! By the Way, Can you tell me the City or State where you live ?
+  utter_vaccine_updates:
+  - text: " Please head over this COVID-19 Vaccine Tracker for latest updates !! https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html " 
+  utter_ask_fever_yes_or_no:
+  - text: " Wait ! Its really a tough task ....Still I will try to answer it !! But you should answer my Questions with yes/no. \n Example:-\n cough,yes \n tiredness,yes  \n Are you suffering with Fever? "
+  utter_ask_cough_yes_or_no:
+  - text: "Do you have Cough ?"
+  utter_ask_tiredness_yes_or_no:
+  - text: "Are you feeling so Tired? "
+  utter_ask_covid_contact:
+  - text: "Do you have a Close Contact with one who tested positive for Covid-19 ?"
+  utter_ask_travel_history:
+  - text: "Did you visit any Covid-19 Red Zone Area recently ?"
+
+  utter_coronavirus_about_sanitizer:
+  - text: "Hand sanitizers can  protect against disease-causing microbes, especially\
+      \ in situations when soap and water are not available. \n They’re also proven\
+      \ to be effective in reducing the number and type of microbes.\n Usage of sanitizer\
+      \ is suggestable. \n It is advisable to use alcohol based sanitizer."
+    
+  utter_coronavirus_precautive_vitamins:
+  - text: "For vitamins and minerals, vitamin C, vitamin D3, vitamin A, vitamin E,\
+      \ vitamin B6, zinc, iron and selenium are highly recommended. \n These micronutrients\
+      \ are known to boost immunity and fend off infections. \n It is important to\
+      \ note that high-dose vitamin C infusions are even used by some healthcare workers\
+      \ in treating COVID-19 patients."
+
+  utter_spread_coronavirus:
+  - text: "\n The coronavirus spreads from person to person through respiratory droplets\
+      \ – tiny drops of mucus that spray into the air when we cough or sneeze. \n\
+      \ A cough or sneeze can also send the virus up to 6 feet away. \nThat’s why\
+      \ we recommend keeping at least 6 feet between you and anyone else and always\
+      \ wear a mask in public to decrease the risk of spread."
+
+
+  utter_coronavirus_children:
+  - text: "\n In very rare cases, children with the new coronavirus can get a serious\
+      \ illness, such as fluid collecting in their lungs or organ failure. But for\
+      \ most children, the risk appears to be more that they could accidentally spread\
+      \ the virus, not get sick from it."
+
+  utter_coronavirus_old_people:
+  - text: "\n As you get older, your risk for severe illness from COVID-19 increases.\
+      \ For example, people in their 50s are at higher risk for severe illness than\
+      \ people in their 40s. \n Similarly, people in their 60s or 70s are, in general,\
+      \ at higher risk for severe illness than people in their 50s. The greatest risk\
+      \ for severe illness from COVID-19 is among those aged 85 or older."
+
+  utter_coronavirus_old_adults_young:
+  - text: " \n It is true that Covid-19 seems to most seriously affect on adults and\
+      \ young people particularly those with pre-existing conditions such as heart\
+      \ disease, lung disease and diabetes. \n It could be that an elderly person's\
+      \ immune systems may not be able to fight off the disease."
+
+  utter_prepare_for_outbreak:
+  - text: "1. Make sure they have access to 2 weeks of medications and supplies in\
+        \ case you need to stay home for prolonged periods of time. \n 2. Create a list\
+        \ of local organizations that you and your household can contact in the event\
+        \ you need access to information, healthcare services, support, and resources.\
+        \ \n 3. Create an emergency contact list of family, friends, neighbors, carpool\
+        \ drivers, health care providers, teachers, employers, the local public health\
+        \ department, and other community resources."
+
+
+  utter_coronavirus_test:
+  - text: "There are two main kinds of tests for coronavirus. \nOne type of test looks\
+        \ for the virus in swabs of the nose or throat, which can reveal if you are\
+        \ currently infected. \nThe other type of test looks in your blood for the antibodies\
+        \ that your immune system makes to attack the coronavirus."
+
+  utter_contact_tracing_corona_period:
+  - text: "SARS-CoV-2 may have a longer incubation time. This means that the time\
+        \ between getting the infection and developing any symptoms is longer than other\
+        \ coronaviruses. \n According to the CDCTrusted Source, SARS-CoV-2 has an incubation\
+        \ period of 2 to 14 days. This means that someone who’s carrying the virus may\
+        \ come into contact with many people before symptoms begin."
+
+  utter_funerals_corona:
+  - text: "You can attend a funeral but with preventive measures.\n Ensure the venue\
+        \ capacity and attendance numbers allow social distancing (at least 2 meters\
+        \ or 3 steps) to be maintained between individuals"
+
+  utter_coronavirus_cleaning_disinfection:
+  - text: Wear disposable gloves when cleaning and disinfecting surfaces. Gloves should
+        be discarded after each cleaning. If reusable gloves are used, those gloves
+        should be dedicated for cleaning and disinfection of surfaces for COVID-19 and
+        should not be used for other purposes.
+
+  utter_community_mitigation_corona:
+  - text: Community mitigation activities are actions that people and communities
+        can take to slow the spread of a new virus with pandemic potential. COVID-19
+        is an infectious disease caused by a new coronavirus. Community mitigation actions
+        are especially important before a vaccine or therapeutic drug becomes widely
+        available
+  utter_corona_from_food_and_water:
+  - text: "It’s possible that the virus can get into food if someone who is infected\
+    \ coughs or sneezes on the food, or has the virus on their hands and touches\
+    \ the food. \n To avoid this, \n 1. Avoid eating or drinking in public places\
+    \ \n 2. Wash fresh groceries \n 3. Sanitize"
+
+
+  utter_treat_corona_home:
+  - text: "Following these will help you to feel good for treating Covid at Home\n\
+        Gargle with hot water, antibiotics, multi vitamin tablets, hot steam, drink\
+        \ fluids, resting. \n Consult doctor or Visit Hospital if emergency."
+
+
+
+
+actions:
+- utter_greet
+- utter_corona
+- utter_covid19
+- utter_symptoms
+- utter_coronavirus_spread_air
+- utter_coronavirus_spread_feces
+- utter_coronavirus_spread_no_symptoms
+- utter_coronavirus_spread_animal_source
+- utter_coronavirus_protection_measures
+- utter_coronavirus_worry_covid19
+- utter_coronavirus_about_risk
+- utter_coronavirus_about_antibiotics
+- utter_coronavirus_about_vaccine
+- utter_coronavirus_about_mask
+- utter_coronavirus_about_incubation
+- utter_ask_corona
+- utter_ask_fever
+- utter_ask_respiration
+- utter_noworries
+- utter_ask_continue
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_type_location
+- utter_vaccine_updates
+- action_corona_location_tracker
+- action_recent_stats
+- action_facility_search
+- utter_ask_fever_yes_or_no
+- utter_ask_cough_yes_or_no
+- utter_ask_tiredness_yes_or_no
+- utter_ask_covid_contact
+- utter_ask_travel_history
+- action_corona_predict
+- utter_coronavirus_about_sanitizer
+- utter_coronavirus_precautive_vitamins
+- utter_spread_coronavirus
+- utter_coronavirus_children
+- utter_coronavirus_old_people
+- utter_coronavirus_old_adults_young
+- utter_prepare_for_outbreak
+- utter_coronavirus_test
+- utter_contact_tracing_corona_period
+- utter_funerals_corona
+- utter_coronavirus_cleaning_disinfection
+- utter_community_mitigation_corona
+- utter_corona_from_food_and_water
+- utter_treat_corona_home
+
+
+
+
+
+    
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
