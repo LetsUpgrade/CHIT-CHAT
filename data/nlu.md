@@ -423,28 +423,57 @@
 - [cough no](cough) 
 - [yes i have cough](cough)
 - [yes i think i have cough](cough)
-- [yes i am not feeling well because of cough](cough)
 - [yes i have severe cough](cough)
 - [yes i do have cough](cough)
 - [yes i have cough from 2 days](cough)
 - [yes i have cough since yesterday](cough) 
 - [yes i have dry cough](cough)
 - [yes i have wet cough](cough)
+- [no i dont have cough](cough)
+- [no i think i dont have cough](cough)
+- [no i dont have severe cough](cough)
+- [no i dont have dry cough](cough)
+- [no i dont have wet cough](cough)
 
 ## intent:tiredness_yes_or_no
 - [tiredness yes](tiredness) 
 - [tiredness no](tiredness) 
-
+- [yes i am feeling tired](tiredness)
+- [yes i have tiredness](tiredness) 
+- [yes i do have tiredness](tiredness) 
+- [yes i have tiredness from yesterday](tiredness) 
+- [yes i have tiredness since 3 days](tiredness) 
+- [yes i am feeling very very tired](tiredness) 
+- [no i am not feeling tired](tiredness)
+- [no i am not feeling very tired](tiredness) 
+- [no i donot have tiredness](tiredness) 
+- [no i don't have tiredness](tiredness) 
+- [no i don't have tiredness or anything](tiredness) 
+- [no i am not feeling tired](tiredness) 
 
 ## intent:covid_contact
 - [close contact yes](contact) 
-- [close contact no](contact) 
-
-
+- [close contact no](contact)
+- [yes i had close contact](contact)
+- [yes i had close contact with a covid positive person](contact)
+- [yes i had contact with covid-19 postive person](contact) 
+- [yes i had closely contacted with a covid positive person](contact)
+- [yes i had closely contacted with corona positive person](contact) 
+- [yes i had close contact with covid-19 postive person](contact) 
+- [yes i had a very close contact](contact)
+- [no i did not have close contact](contact)
+- [no i didn't had close contact with covid-19 positive person](contact)
+- [no i didnt had any close contact with corona positive person](contact) 
 
 ## intent:travel_yes_or_no
 - [visited yes](travel) 
-- [visited no](travel) 
+- [visited no](travel)
+- [yes i visited redzone recently](travel)
+- [yes i visited redzone few days back](travel)
+- [yes i visited redzone](travel)
+- [no i did not visit redzone recently](travel)
+- [no i did not visit redzone few days back](travel)
+- [no i did not visit redzone](travel)
 
 
 ## intent:corona_in_my_area
