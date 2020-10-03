@@ -1,3 +1,3 @@
 - This is the folder where the Models get stored once we train our model using **rasa train**.
 - We could not upload the trained model due to its more Space Occupancy.
-- Follow the steps given in main README file to know how to generate models/
+- Follow the steps given in main README file to know how to generate models
