@@ -1,15 +1,21 @@
+# Importing the required libraries and Packages
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction 
-
 from typing import Any, Text, Dict, List, Union
 
 import requests
 import json
 
+import datetime
+from datetime import date 
+from datetime import timedelta 
 
 
 class ActionCoronaLocationTracker(Action):
+    """
+    This is a Custom action Class which gives the covid-19 statistics when user inputs his location as State.
+    """
 
     def name(self) -> Text:
         return "action_corona_location_tracker"
@@ -18,16 +24,18 @@ class ActionCoronaLocationTracker(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-
+        # Getting the information from the api.
         response = requests.get("https://api.covid19india.org/data.json").json()
-         
+        
+        # Using the tracker for finding the location typed by the user
         entities = tracker.latest_message['entities']
         state = " "
         for e in entities :
             if e['entity'] == "location" :
                 state = e['value']
         
-        message = "Please enter correct State or City name !"
+        # Validating the user input and giving the stats if user inputs correct State name.
+        message = "Please enter correct State name !"
         for data in response["statewise"]:
             if (data["state"].lower() == state.lower()):
                 # print(data)
@@ -41,6 +49,9 @@ class ActionCoronaLocationTracker(Action):
 
 
 class ActionCoronaTodaysStats(Action):
+    """
+    This is a Custom action Class which gives the recent covid-19 statistics of India.
+    """
 
     def name(self) -> Text:
         return "action_recent_stats"
@@ -49,34 +60,28 @@ class ActionCoronaTodaysStats(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-
+        # Getting the information from the api.
         response = requests.get("https://api.covid19india.org/data.json").json()
-        
-
-        import datetime
-        from datetime import date 
-        from datetime import timedelta 
-
+  
         # Get today's date 
         today = date.today() 
 
         # Yesterday date 
         yesterday = today - timedelta(days = 1) 
-
+        
+        # Converting the date from yyyy|mm|dd to dd Month. Ex:- 2020|10|02 to 02 October
         yesterday = str(yesterday).split("-")
-
         months = ['January', 'February', 'March', 'April', 'May', 'June', 'July','August', 'September', 'October', 'November', 'December']
-
         month = int(yesterday[1])
-
         result = ""
         result += yesterday[2]
         result +=" "
         result += months[month-1]
         result +=" "
-
-        print(result)
+        
         message = "Sorry ! Some internal error happened :}"
+        
+        # Fetching the Stats
         for data in response["cases_time_series"]:
             if data["date"] == result:
                 message = "Here are Recent Covid-19 Updates of India !" + "\n"+ "The following corresponds to :-"+ data["date"] + "\n"+ "No of Confirmed Cases :-  " + data["dailyconfirmed"] + "\n" + "No of Recovered Cases :-  " + data["dailyrecovered"] + "\n" + "No of Death Cases :-  " + data["dailydeceased"]  + "\n" + "Head over the official WHO Website for Accurate Statistics here :- https://covid19.who.int/ "
@@ -88,10 +93,12 @@ class ActionCoronaTodaysStats(Action):
 
 
 
-
+ # Getting the information from the api.
 covid_facilities = requests.get('https://api.covid19india.org/resources/resources.json')
 facilities_json= covid_facilities.json()
 
+
+# Defining few functions which aid in giving the testcenters,hospitals,shelterhomes,freefoods availability by state 
 
 def get_testcenters_by_state(state):
     facilities = []
@@ -125,7 +132,9 @@ def get_freefoods_by_state(state):
 
 
 class ActionFacilitySearch(Action):
-
+    """
+    This is a Custom action Class which gives the details of available facilities in a given state like testcenters, hospitals, shelter homes, freefood availability.
+    """
     def name(self) -> Text:
         return "action_facility_search"
 
@@ -138,7 +147,8 @@ class ActionFacilitySearch(Action):
 
             print("Tracked Facility: "+facility)
             print("Tracked Location: "+location)
-
+            
+            # Validating the type of facility user asks for and gives the details of free food availabilty.
             if facility == "free food":
                 facilities_state = get_freefoods_by_state(location.title())
                 if len(facilities_state) != 0:
@@ -147,6 +157,7 @@ class ActionFacilitySearch(Action):
                 else:
                     dispatcher.utter_message("Sorry! No {} found in {}".format(facility,location))
             
+            # Validating the type of facility user asks for and gives the details of hospitals.
             if facility == "hospital":
                 facilities_state = get_hospitals_by_state(location.title())
                 if len(facilities_state) != 0:
@@ -155,6 +166,7 @@ class ActionFacilitySearch(Action):
                 else:
                     dispatcher.utter_message("Sorry! No {} found in {}".format(facility,location))
             
+            # Validating the type of facility user asks for and gives the details of testcenters.
             if facility == "test center":
                 facilities_state = get_testcenters_by_state(location.title())
                 if len(facilities_state) != 0:
@@ -162,7 +174,8 @@ class ActionFacilitySearch(Action):
                     dispatcher.utter_message("Hey, here is the address of the {} facilities in {} :- \n {}".format(facility, location, allfacilities))
                 else:
                     dispatcher.utter_message("Sorry! No {} found in {}".format(facility,location))
-            
+                    
+            # Validating the type of facility user asks for and gives the details of shelter homes.
             if facility == "shelter home":
                 facilities_state = get_shelterhomes_by_state(location.title())
                 if len(facilities_state) != 0:
@@ -181,7 +194,9 @@ class ActionFacilitySearch(Action):
 
 
 class ActionCoronaPredict(Action):
-
+    """
+    This is a Custom action Class which predicts whether a person has Covid-19 or not based on his responses to five questions.
+    """
     def name(self) -> Text:
         return "action_corona_predict"
 
@@ -190,21 +205,25 @@ class ActionCoronaPredict(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
-            x1=tracker.get_slot("fever")
-            x2=tracker.get_slot("cough")
-            x3=tracker.get_slot("tiredness")
-            x4=tracker.get_slot("contact")
-            x5=tracker.get_slot("travel")
-
-            result_list=[x1,x2,x3,x4,x5]
-            print(result_list)
+            # Getting the slot values.
+            f=tracker.get_slot("fever")
+            c=tracker.get_slot("cough")
+            ti=tracker.get_slot("tiredness")
+            c=tracker.get_slot("contact")
+            tr=tracker.get_slot("travel")
+            
+           
+            result_list=[f,c,ti,c,tr]
+            
+            # Counting for the presence of "yes" in slot values.
             threshold = 0
             for i in result_list :
                 if "yes" in i.lower() :
                     threshold+=1
            
             print(threshold)
-
+            
+            # Giving the message based on number of times "yes" appeared.
             if (threshold== 5):
                 dispatcher.utter_message("It is more likely that you have Covid-19.\n\n Better to go for a Covid Test and consult a doctor.")
             if (threshold==4):
