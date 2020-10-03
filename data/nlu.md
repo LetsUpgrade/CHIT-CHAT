@@ -382,7 +382,6 @@
 - suggestions to avoid corona
 - how to prevent covid19
 
-
 ## intent:do_i_have_corona
 - do I have covid
 - does I have corona
@@ -404,66 +403,48 @@
 - pridict if i have covid
 - do my corona test
 
-
-
-
-
-
-
-
-
 ## intent:fever_yes_or_no   
-- [fever,yes](fever)
-- [fever,yes](fever)
-- [fever,no](fever) 
-- [fever,no](fever) 
-- [fever,yes](fever)
-- [fever,yes](fever)
-- [fever,no](fever) 
-- [fever,no](fever) 
-
+- [fever yes](fever)
+- [fever no](fever) 
+- [yes i have fever](fever)
+- [yes i think i have fever](fever)
+- [yes i am feeling feverish](fever)
+- [yes from yesterday i have fever](fever)
+- [yes from 2 days i have fever](fever)
+- [yes i have high fever](fever)
+- [no i don't have fever](fever)
+- [no i do not have fever](fever)
+- [no i do not think  i have fever](fever) 
+- [no i don't think so that have fever](fever) 
+- [no i am not feeling feverish](fever)
 
 ## intent:cough_yes_or_no
-- [cough,yes](cough) 
-- [cough,no](cough) 
-- [cough,yes](cough) 
-- [cough,no](cough) 
-- [cough,yes](cough) 
-- [cough,no](cough) 
-- [cough,yes](cough) 
-- [cough,no](cough) 
+- [cough yes](cough) 
+- [cough no](cough) 
+- [yes i have cough](cough)
+- [yes i think i have cough](cough)
+- [yes i am not feeling well because of cough](cough)
+- [yes i have severe cough](cough)
+- [yes i do have cough](cough)
+- [yes i have cough from 2 days](cough)
+- [yes i have cough since yesterday](cough) 
+- [yes i have dry cough](cough)
+- [yes i have wet cough](cough)
 
 ## intent:tiredness_yes_or_no
-- [tiredness,yes](tiredness) 
-- [tiredness,yes](tiredness) 
-- [tiredness,no](tiredness) 
-- [tiredness,no](tiredness) 
-- [tiredness,yes](tiredness) 
-- [tiredness,yes](tiredness) 
-- [tiredness,no](tiredness) 
-- [tiredness,no](tiredness) 
+- [tiredness yes](tiredness) 
+- [tiredness no](tiredness) 
 
 
 ## intent:covid_contact
-- [close contact,yes](contact) 
-- [close contact,yes](contact) 
-- [close contact,no](contact) 
-- [close contact,no](contact) 
-- [close contact,yes](contact) 
-- [close contact,yes](contact) 
-- [close contact,no](contact) 
-- [close contact,no](contact) 
+- [close contact yes](contact) 
+- [close contact no](contact) 
+
 
 
 ## intent:travel_yes_or_no
-- [visited,yes](travel) 
-- [visited,yes](travel) 
-- [visited,yes](travel) 
-- [visited,yes](travel) 
-- [visited,no](travel) 
-- [visited,no](travel) 
-- [visited,no](travel) 
-- [visited,no](travel) 
+- [visited yes](travel) 
+- [visited no](travel) 
 
 
 ## intent:corona_in_my_area
@@ -475,8 +456,6 @@
 - What is the number of cases in my state
 - Cases in my state
 - Number of cases in my state
-
-
 
 ## intent:corona_location_tracker
 - I am living in [Tamilnadu](location)
@@ -522,14 +501,15 @@
 - Covid-19 India Updates 
 - Give me brief details of COVID-19 in INDIA 
 
-
-
 ## intent:vaccine_updates
 - Tell the Corona vaccine Updates
 - Give the current Corona Vaccine updates
 - Any update regarding Corona Vaccine
 - What are Corona Vaccine updates
-
+- Vaccine Updates
+- vaccine updates
+- give me the vaccine updates
+- any updates on vaccine
 
 ## intent:search_provider
 - I need a [hospital](facility_type)
