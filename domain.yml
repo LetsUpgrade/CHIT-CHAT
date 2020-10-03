@@ -152,7 +152,7 @@ responses:
   utter_ask_continue:
   - text: "Sorry, I don't understand. Do you want to continue?"
   utter_type_location:
-  - text: Okay, I will do that ! By the Way, Can you tell me the City or State where you live ?
+  - text: Okay, I will do that ! By the Way, Can you tell me the State where you live ?
   utter_vaccine_updates:
   - text: " Please head over this COVID-19 Vaccine Tracker for latest updates !! https://www.nytimes.com/interactive/2020/science/coronavirus-vaccine-tracker.html " 
   utter_ask_fever_yes_or_no:
