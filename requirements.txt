@@ -1,0 +1,158 @@
+absl-py==0.9.0
+aiofiles==0.5.0
+aiohttp==3.6.2
+APScheduler==3.6.3
+astor==0.8.1
+async-generator==1.10
+async-timeout==3.0.1
+attrs==19.3.0
+backcall==0.2.0
+blinker==1.4
+boto3==1.15.2
+botocore==1.18.2
+brotlipy==0.7.0
+cachetools @ file:///tmp/build/80754af9/cachetools_1596822027882/work
+certifi==2020.6.20
+cffi @ file:///C:/ci/cffi_1600699250966/work
+chardet==3.0.4
+click==7.1.2
+cloudpickle==1.3.0
+colorama==0.4.3
+colorclass==2.2.0
+coloredlogs==10.0
+colorhash==1.0.2
+cryptography @ file:///C:/ci/cryptography_1598873979408/work
+cycler==0.10.0
+decorator==4.4.2
+dnspython==1.16.0
+docopt==0.6.2
+fbmessenger==6.0.0
+future==0.18.2
+gast==0.2.2
+gevent==1.5.0
+google-auth @ file:///tmp/build/80754af9/google-auth_1600274525154/work
+google-auth-oauthlib==0.4.1
+google-pasta==0.2.0
+greenlet==0.4.17
+grpcio @ file:///C:/ci/grpcio_1597406403308/work
+h11==0.8.1
+h2==3.2.0
+h5py==2.10.0
+hpack==3.0.0
+hstspreload==2020.9.22
+httplib2==0.18.1
+httptools==0.1.1
+httpx==0.9.3
+humanfriendly==8.2
+hyperframe==5.2.0
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+importlib-metadata @ file:///C:/ci/importlib-metadata_1593446525189/work
+ipykernel==5.3.4
+ipython==7.18.1
+ipython-genutils==0.2.0
+jedi==0.17.2
+jmespath==0.10.0
+joblib==0.16.0
+jsonpickle==1.4.1
+jsonschema==3.2.0
+jupyter-client==6.1.7
+jupyter-core==4.6.3
+kafka-python==1.4.7
+Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
+Keras-Preprocessing==1.1.0
+kiwisolver==1.2.0
+Markdown @ file:///C:/ci/markdown_1597415185889/work
+matplotlib==3.2.2
+mattermostwrapper==2.2
+mkl-fft==1.2.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+multidict==4.7.6
+networkx==2.4
+numpy @ file:///C:/ci/numpy_and_numpy_base_1596233945180/work
+oauth2client==4.1.3
+oauthlib==3.1.0
+opt-einsum==3.1.0
+packaging==20.4
+pandas==1.1.2
+parso==0.7.1
+pickleshare==0.7.5
+pika==1.1.0
+prompt-toolkit==2.0.10
+protobuf==3.13.0
+psycopg2-binary==2.8.6
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pydot==1.4.1
+Pygments==2.6.1
+PyJWT==1.7.1
+pykwalify==1.7.0
+pymongo==3.8.0
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
+pyreadline==2.1
+pyrsistent==0.17.3
+PySocks @ file:///C:/ci/pysocks_1594394709107/work
+python-crfsuite==0.9.7
+python-dateutil==2.8.1
+python-engineio==3.12.1
+python-socketio==4.5.1
+python-telegram-bot==12.8
+pytz==2019.3
+pywin32==228
+PyYAML==5.3.1
+pyzmq==19.0.2
+questionary==1.5.2
+rasa==1.10.13
+rasa-sdk==1.10.2
+redis==3.5.3
+regex==2020.6.8
+requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+requests-oauthlib==1.3.0
+requests-toolbelt==0.9.1
+rfc3986==1.4.0
+rocketchat-API==1.3.1
+rsa @ file:///tmp/build/80754af9/rsa_1596998415516/work
+ruamel.yaml==0.16.12
+ruamel.yaml.clib==0.2.2
+s3transfer==0.3.3
+sanic==19.12.2
+Sanic-Cors==0.10.0.post3
+sanic-jwt==1.4.1
+Sanic-Plugins-Framework==0.9.4
+scikit-learn==0.22.2.post1
+scipy @ file:///C:/ci/scipy_1597686737426/work
+sendmail==2.0
+six==1.15.0
+sklearn-crfsuite==0.3.6
+slackclient==2.9.0
+sniffio==1.1.0
+SQLAlchemy==1.3.19
+tabulate==0.8.7
+tensorboard==2.1.1
+tensorboard-plugin-wit==1.6.0
+tensorflow==2.1.0
+tensorflow-addons==0.7.1
+tensorflow-estimator==2.1.0
+tensorflow-hub==0.8.0
+tensorflow-probability==0.9.0
+termcolor==1.1.0
+terminaltables==3.1.0
+tornado==6.0.4
+tqdm==4.45.0
+traitlets==5.0.0
+twilio==6.26.3
+typing-extensions==3.7.4.3
+tzlocal==2.1
+ujson==2.0.3
+urllib3 @ file:///tmp/build/80754af9/urllib3_1597086586889/work
+wcwidth==0.2.5
+webexteamssdk==1.3
+websockets==8.1
+Werkzeug==0.16.1
+win-inet-pton==1.1.0
+wincertstore==0.2
+wrapt==1.12.1
+yarl==1.5.1
+zipp==3.1.0
