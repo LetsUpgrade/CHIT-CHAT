@@ -16,6 +16,8 @@ A bot that aims to serve humans queries and give an feasible answer to their que
 
 >## 💻&nbsp; GETTING STARTED
 
+## Steps to run the Chatbot in your local device !!
+
 => **Fork <a href=https://github.com/LetsUpgrade/CHIT-CHAT><img src="https://img.icons8.com/ios/24/000000/code-fork.png"></a>this repository to start contributing.**
 
 => Open your Git Bash command window and in the root directory type the following commands :
@@ -24,3 +26,7 @@ A bot that aims to serve humans queries and give an feasible answer to their que
     2) git clone -Clone the repository to your local machine
       (git clone https://github.com/<your-github-username>/LetsUpgrade/CHIT-CHAT.git)
 ```    
+=> Once we are on Project Directory in Terminal or Command Prompt, Follow the below commands :-
+1. `rasa train` To train the Model
+2. `rasa shell` To start Chatbot and chat with it.
+3. `rasa run actions` Use this command in different Terminal or Command Prompt to start the custom actions server.
