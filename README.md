@@ -1,9 +1,8 @@
 # **CHIT CHAT**
 
 ### **PROJECT ID: 07**
->## ✍&nbsp; PROJECT DESCRIPTION
 
-## Covid-19 Chatbot!
+## Covid-19 Chatbot! :boom:
 A bot that aims to serve humans queries and give an feasible answer to their queries. It is a machine-learning discussion dialog engine which makes it possible to generate responses based on collections of old conversations.
 
 
