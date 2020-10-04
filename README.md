@@ -30,3 +30,8 @@ A bot that aims to serve humans queries and give an feasible answer to their que
 1. `rasa train` To train the Model
 2. `rasa shell` To start Chatbot and chat with it.
 3. `rasa run actions` Use this command in different Terminal or Command Prompt to start the custom actions server.
+![Local_Server](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Images/local_server.png)
+# Deployment :earth_asia:
+##### We deployed our boat on Rasa-x Server.
+##### To know the detailed process head over [here](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Deployment%20Steps.docx)
+![Global_Server](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Images/global_server.jpeg)
