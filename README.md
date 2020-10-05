@@ -13,6 +13,9 @@ A bot that aims to serve humans queries and give an feasible answer to their que
 * Rasa FrameWork
 * Rasa X based deployment
 
+## FEATURES
+The Covid-19 chatbot helps the users to get detailed information about Covid-19. Some of the features are identifying if anyone is Corona positive or not, giving information of Covid cases in their area, telling precautions, symptoms, updates of vaccine, nearby hospitals, protection measures, antibiotics, mask and tries to answer all the queries of a user regarding Covid-19.
+
 >## 💻&nbsp; GETTING STARTED
 
 ## Steps to run the Chatbot in your local device !!
@@ -34,3 +37,15 @@ A bot that aims to serve humans queries and give an feasible answer to their que
 ##### We deployed our boat on Rasa-x Server.
 ##### To know the detailed process head over [here](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Deployment%20Steps.docx)
 ![Global_Server](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Images/global_server.jpeg)
+
+## MENTORS
+* [Sanjay Marreddi](https://github.com/SanjayMarreddi)
+* [Rohit Singh](https://github.com/rohitgit1)
+
+## STUDENT DEVELOPERS
+* [Atmakuri Ganesh](https://github.com/atmakuriganesh)
+* [Abhishek Kumar](https://github.com/abhik99)
+* [Shaik Yasmeen](https://github.com/shaikyasmeen-mldl)
+* [Anusha Thatikonta](https://github.com/anut123)
+* [Puja Kasture](https://github.com/puja-kasture)
+* Palaniyyapan
