@@ -38,14 +38,13 @@ The Covid-19 chatbot helps the users to get detailed information about Covid-19.
 ##### To know the detailed process head over [here](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Deployment%20Steps.docx)
 ![Global_Server](https://github.com/LetsUpgrade/CHIT-CHAT/blob/master/Images/global_server.jpeg)
 
-## MENTORS
-* [Sanjay Marreddi](https://github.com/SanjayMarreddi)
-* [Rohit Singh](https://github.com/rohitgit1)
-
-## STUDENT DEVELOPERS
+## Contributors :sunglasses:
 * [Atmakuri Ganesh](https://github.com/atmakuriganesh)
 * [Abhishek Kumar](https://github.com/abhik99)
 * [Shaik Yasmeen](https://github.com/shaikyasmeen-mldl)
 * [Anusha Thatikonta](https://github.com/anut123)
 * [Puja Kasture](https://github.com/puja-kasture)
 * Palaniyyapan
+
+* [Sanjay Marreddi](https://github.com/SanjayMarreddi)
+* [Rohit Singh](https://github.com/rohitgit1)
