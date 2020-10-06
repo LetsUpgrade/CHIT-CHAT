@@ -42,9 +42,9 @@ The Covid-19 chatbot helps the users to get detailed information about Covid-19.
 * [Atmakuri Ganesh](https://github.com/atmakuriganesh)
 * [Abhishek Kumar](https://github.com/abhik99)
 * [Shaik Yasmeen](https://github.com/shaikyasmeen-mldl)
-* [Anusha Thatikonta](https://github.com/anut123)
+* [Anusha Thatikonda](https://github.com/anut123)
 * [Puja Kasture](https://github.com/puja-kasture)
-* Palaniyyapan
+* [Palaniyyapan](https://github.com/Palaniyappan-S)
 
 * [Sanjay Marreddi](https://github.com/SanjayMarreddi)
 * [Rohit Singh](https://github.com/rohitgit1)
