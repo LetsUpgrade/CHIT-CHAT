@@ -48,7 +48,7 @@ hyperframe==5.2.0
 idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 importlib-metadata @ file:///C:/ci/importlib-metadata_1593446525189/work
 ipykernel==5.3.4
-ipython==7.18.1
+ipython==7.31.1
 ipython-genutils==0.2.0
 jedi==0.17.2
 jmespath==0.10.0
