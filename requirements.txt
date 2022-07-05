@@ -145,7 +145,7 @@ traitlets==5.0.0
 twilio==6.26.3
 typing-extensions==3.7.4.3
 tzlocal==2.1
-ujson==2.0.3
+ujson==5.4.0
 urllib3 @ file:///tmp/build/80754af9/urllib3_1597086586889/work
 wcwidth==0.2.5
 webexteamssdk==1.3
