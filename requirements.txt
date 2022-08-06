@@ -117,7 +117,7 @@ rsa @ file:///tmp/build/80754af9/rsa_1596998415516/work
 ruamel.yaml==0.16.12
 ruamel.yaml.clib==0.2.2
 s3transfer==0.3.3
-sanic==19.12.2
+sanic==20.12.7
 Sanic-Cors==0.10.0.post3
 sanic-jwt==1.4.1
 Sanic-Plugins-Framework==0.9.4
